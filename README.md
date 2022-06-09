@@ -29,4 +29,5 @@ Configuration properties:
 
 -------------------
 [Download](https://raw.githubusercontent.com/andrey-riwall/create-element.js/main/create-object.js)
+<a href='https://raw.githubusercontent.com/andrey-riwall/create-element.js/main/create-object.js' download>Download</a>
 -------------------
