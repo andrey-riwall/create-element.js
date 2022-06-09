@@ -7,7 +7,7 @@ Usage:
   ```html
   <script src="/your/path/create-element.js"></script>
   <script type="text/javascript">
-    createEl(); //default conf
+    let item = createEl(); //default conf
   </script>
   ```
 
