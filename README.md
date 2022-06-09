@@ -26,3 +26,7 @@ Configuration properties:
     text: null, // default text is none (string)
   }
   ```
+
+-------------------
+[Download](https://raw.githubusercontent.com/andrey-riwall/create-element.js/main/create-object.js)
+-------------------
