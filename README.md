@@ -11,7 +11,7 @@ Usage:
   </script>
   ```
 
-This func use default config.
+This func use default config. The DOM element is returned to the variable.
 
 -------------------
 Configuration properties:
