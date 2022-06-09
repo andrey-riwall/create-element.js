@@ -3,10 +3,12 @@ create-element.js
 Usage:
 -------------------
 
+  ```html
   <script src="/your/path/create-element.js"></script>
   <script type="text/javascript">
     createEl(); //default conf
   </script>
+  ```
 
 This func use default config.
 
@@ -14,6 +16,7 @@ This func use default config.
 Configuration properties:
 -------------------
 
+  ```javascript
   {
     tag: 'div', // default tag (string)
     append: document.body, // default append (dom)
@@ -21,3 +24,4 @@ Configuration properties:
     id: null, // default id is none (string)
     text: null, // default text is none (string)
   }
+  ```
