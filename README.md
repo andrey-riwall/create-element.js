@@ -1,5 +1,6 @@
-create-element.js
+CREATE ELEMENT.js
 
+-------------------
 Usage:
 -------------------
 
