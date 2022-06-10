@@ -20,7 +20,7 @@ Configuration properties:
   ```javascript
   {
     tag: 'div', // default tag (string)
-    append: document.body, // default append (dom)
+    parent: document.body, // default parent (dom)
     class: null, // default class is none (string)
     id: null, // default id is none (string)
     text: null, // default text is none (string)

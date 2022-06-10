@@ -1,7 +1,7 @@
 window.createEl = function (userConfig = new Object()) {
     let defaulConfig = {
         tag: 'div',
-        append: document.body,
+        parent: document.body,
         class: null,
         id: null,
         text: null,
@@ -12,8 +12,8 @@ window.createEl = function (userConfig = new Object()) {
     if (newConfig.class != null) item.setAttribute('class', newConfig.class);
     if (newConfig.id != null) item.id = newConfig.id;
     if (newConfig.text != null) item.textContent = newConfig.text;
-    newConfig.append = newConfig.append === null ? document.body : newConfig.append;
-    newConfig.append.append(item);
+    newConfig.parent = newConfig.parent === null ? document.body : newConfig.parent;
+    (newConfig.parent).append(item);
 
     return item;
 }
