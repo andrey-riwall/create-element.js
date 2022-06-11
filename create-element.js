@@ -1,4 +1,4 @@
-function createEl (userConfig = new Object()) {
+function CreateEl (userConfig = new Object()) {
     let defaulConfig = {
         tag: 'div',
         parent: document.body,
