@@ -99,12 +99,12 @@ Example:
   <script type="text/javascript">
     let sectionHeading = new CreateEl({
       tag: 'h1',
+      parent: document.getElementById('section'),
       attribute: {
         class: 'heading',
         id: 'sectionHeading',
         style: 'color: blue; font-size: 32px',
       },
-      parent: document.getElementById('section'),
       text: 'Hello world',
     });
   </script>
