@@ -22,7 +22,7 @@ Default configuration properties:
     tag: 'div', // default tag (string)
     parent: document.body, // default parent (dom)
     attribute: null, // default attributes (object)
-    text: null, // default text is none (string; number)
+    text: null, // default text is none (string; number; array;)
   }
   ```
 
@@ -85,12 +85,22 @@ Attribute:
 Text:
 -------------------
 
-  Text value can be: string; number;
+  Text value can be: string; number; array;
 
-  Only one value:
+  One value:
   ```javascript
   text: 'Lorem ipsum dolor sit amet.' // string;
   ```
+
+  Many values:
+  ```javascript
+  text: [
+    'Lorem ipsum dolor sit amet.',
+    'Lorem ipsum dolor sit.',
+    'Lorem ipsum dolor sit amet consectetur.'
+  ]
+  ```
+  This construction will create many elements, the number of which is equal to the length of the text array. The elements will copy tag, attribute, parent. The array of created elements will be returned to the variable.
 
 -------------------
 Example:
