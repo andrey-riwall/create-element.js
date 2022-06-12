@@ -37,12 +37,16 @@ Attribute:
   attribute: [
     'class', 'element'
   ]
+  ```
 
+  ```javascript
   // one attribute without value
   attribute: [
     'required'
   ]
-  
+  ```
+
+  ```javascript
   // many attributes with or without a value
   attribute: [
     [ 'class', 'element' ],
