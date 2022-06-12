@@ -56,5 +56,31 @@ Attribute:
   ```
 
 -------------------
+Example:
+-------------------
+
+  Create heading:
+  ```html
+  <script src="/your/path/create-element.js"></script>
+  <script type="text/javascript">
+    let sectionHeading = new CreateEl({
+      tag: 'h1',
+      attribute: [
+        [ 'class', 'heading' ],
+        [ 'id', 'sectionHeading' ],
+        [ 'style', 'color: blue; font-size: 32px;' ]
+      ],
+      parent: document.getElementById('section'),
+      text: 'Hello world',
+    });
+  </script>
+  ```
+
+  Result:
+  ```html
+  <h1 class="heading" id="sectionHeading" style="color: blue; font-size: 32px;">Hello world</h1>
+  ```
+
+-------------------
 [Download](https://raw.githubusercontent.com/andrey-riwall/create-element.js/main/create-object.js)
 -------------------
