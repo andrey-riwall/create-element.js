@@ -27,6 +27,7 @@ Default configuration properties:
   ```
 
   Use ```null``` if you don't want to use this.
+  P.s. the ```tag``` and ```parent``` properties cannot be ```null```.
 
 -------------------
 Tag:
