@@ -22,7 +22,7 @@ Default configuration properties:
     tag: 'div', // default tag (string)
     parent: document.body, // default parent (dom)
     attribute: [
-      null, null // default attributes (array with string or number; array with (array with string or number))
+      null, null // default attributes (string or number; array(s) with string or number)
     ],
     text: null, // default text is none (string; number)
   }
