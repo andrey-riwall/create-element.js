@@ -95,9 +95,9 @@ Text:
   Many values:
   ```javascript
   text: [
-    'Lorem ipsum dolor sit amet.',
-    'Lorem ipsum dolor sit.',
-    'Lorem ipsum dolor sit amet consectetur.'
+    'Lorem ipsum dolor sit amet.', // string
+    3463, // number
+    true, // boolean
   ]
   ```
   This construction will create many elements, the number of which is equal to the length of the text array. The elements will copy tag, attribute, parent. The array of created elements will be returned to the variable.
