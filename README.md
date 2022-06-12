@@ -36,7 +36,7 @@ Attribute:
   // one attribute with value
   attribute: [
     'class', 'element'
-  ],
+  ]
   // one attribute without value
   attribute: [
     'required'
