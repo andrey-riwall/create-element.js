@@ -14,7 +14,7 @@ Usage:
 This func use default config. The DOM element is returned to the variable.
 
 -------------------
-Configuration properties:
+Default configuration properties:
 -------------------
 
   ```javascript
