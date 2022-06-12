@@ -25,8 +25,11 @@ function CreateEl (userCfg = new Object()) {
         item.textContent = newCfg.text;
     }
 
-    newCfg.parent = newCfg.parent === null ? document.body : newCfg.parent;
-    (newCfg.parent).append(item);
+    if (newCfg.parent != null) {
+        (newCfg.parent).append(item);
+    } else {
+        console.error('You cannot leave out the parent!!!')
+    }
 
     return item;
 }
