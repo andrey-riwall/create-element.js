@@ -27,8 +27,32 @@ Default configuration properties:
   ```
 
 -------------------
+Tag:
+-------------------
+
+  Tag value can be string;
+
+  Only one value:
+  ```javascript
+  tag: 'div' // string;
+  ```
+
+-------------------
+Parent:
+-------------------
+
+  Parent value can be dom;
+
+  Only one value:
+  ```javascript
+  parent: document.querySelector('section') // dom;
+  ```
+
+-------------------
 Attribute:
 -------------------
+
+  Attibute values can be: string; number; boolean;
 
   One attribute with value:
   ```javascript
@@ -49,8 +73,20 @@ Attribute:
   attribute: {
     class: 'heading',
     id: 'sectionHeading',
+    tabindex: 1,
     required: true,
   },
+  ```
+
+-------------------
+Text:
+-------------------
+
+  Text value can be: string; number;
+
+  Only one value:
+  ```javascript
+  text: 'Lorem ipsum dolor sit amet.' // string;
   ```
 
 -------------------
