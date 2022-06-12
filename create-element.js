@@ -1,19 +1,36 @@
-function CreateEl (userConfig = new Object()) {
-    let defaulConfig = {
+function CreateEl (userCfg = new Object()) {
+    let defaulCfg = {
         tag: 'div',
         parent: document.body,
-        class: null,
-        id: null,
+        attribute: [ null, null ],
         text: null,
     }
-    let newConfig = { ...defaulConfig, ...userConfig }
+    let newCfg = { ...defaulCfg, ...userCfg }
     
-    let item = document.createElement(newConfig.tag);
-    if (newConfig.class != null) item.setAttribute('class', newConfig.class);
-    if (newConfig.id != null) item.id = newConfig.id;
-    if (newConfig.text != null) item.textContent = newConfig.text;
-    newConfig.parent = newConfig.parent === null ? document.body : newConfig.parent;
-    (newConfig.parent).append(item);
+    let item = document.createElement(newCfg.tag);
+
+    if (String(typeof newCfg.attribute[0]) === 'object') {
+        newCfg.attribute.forEach((el) => {
+            if (String(typeof el) === 'object' && (el[0] && el[1])) {
+                item.setAttribute(el[0], el[1]);
+            } else if (String(typeof el) === 'object' && (el[0] && !el[1])) {
+                item.setAttribute(el[0], '');
+            } else if (String(typeof el) != 'object') {
+                item.setAttribute(el, '');
+            }
+        });
+    } else if ((String(typeof newCfg.attribute[0]) === 'string' || String(typeof newCfg.attribute[0]) === 'number') && (String(typeof newCfg.attribute[1]) === 'string' || String(typeof newCfg.attribute[1]) === 'number')) {
+        item.setAttribute(newCfg.attribute[0], newCfg.attribute[1]);
+    } else if ((String(typeof newCfg.attribute[0]) === 'string' || String(typeof newCfg.attribute[0]) === 'number') && !newCfg.attribute[1]) {
+        item.setAttribute(newCfg.attribute[0], '');
+    }
+
+    if (newCfg.text != null) {
+        item.textContent = newCfg.text;
+    }
+
+    newCfg.parent = newCfg.parent === null ? document.body : newCfg.parent;
+    (newCfg.parent).append(item);
 
     return item;
 }
