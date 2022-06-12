@@ -7,7 +7,12 @@ function CreateEl (userCfg = new Object()) {
     }
     let newCfg = { ...defaulCfg, ...userCfg }
     
-    let item = document.createElement(newCfg.tag);
+    let item;
+    if (newCfg.tag != null) {
+        item = document.createElement(newCfg.tag);
+    } else {
+        console.error('You cannot leave out the tag!!!')
+    }
 
     if (newCfg.attribute != null) {
         let attributeEntries = Object.entries(newCfg.attribute);

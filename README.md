@@ -26,6 +26,8 @@ Default configuration properties:
   }
   ```
 
+  Use ```javascript null ``` if you don't want to use this.
+
 -------------------
 Tag:
 -------------------
