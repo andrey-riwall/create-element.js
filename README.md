@@ -37,10 +37,12 @@ Attribute:
   attribute: [
     'class', 'element'
   ]
+
   // one attribute without value
   attribute: [
     'required'
   ]
+  
   // many attributes with or without a value
   attribute: [
     [ 'class', 'element' ],
