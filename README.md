@@ -21,7 +21,7 @@ Default configuration properties:
   {
     tag: 'div', // default tag (string)
     parent: document.body, // default parent (dom)
-    attribute: null; // default attributes (object)
+    attribute: null, // default attributes (object)
     text: null, // default text is none (string; number)
   }
   ```
