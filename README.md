@@ -21,9 +21,7 @@ Default configuration properties:
   {
     tag: 'div', // default tag (string)
     parent: document.body, // default parent (dom)
-    attribute: [
-      null, null // default attributes (string or number; array(s) with string or number)
-    ],
+    attribute: null; // default attributes (object)
     text: null, // default text is none (string; number)
   }
   ```
@@ -34,25 +32,25 @@ Attribute:
 
   One attribute with value:
   ```javascript
-  attribute: [
-    'class', 'element'
-  ]
+  attribute: {
+    class: 'name'
+  }
   ```
 
   one attribute without value:
   ```javascript
-  attribute: [
-    'required'
-  ]
+  attribute: {
+    required: true
+  }
   ```
 
   many attributes with or without a value:
   ```javascript
-  attribute: [
-    [ 'class', 'element' ],
-    [ 'id', 21 ],
-    'required'
-  ]
+  attribute: {
+    class: 'heading',
+    id: 'sectionHeading',
+    required: true,
+  },
   ```
 
 -------------------
@@ -65,11 +63,11 @@ Example:
   <script type="text/javascript">
     let sectionHeading = new CreateEl({
       tag: 'h1',
-      attribute: [
-        [ 'class', 'heading' ],
-        [ 'id', 'sectionHeading' ],
-        [ 'style', 'color: blue; font-size: 32px;' ]
-      ],
+      attribute: {
+        class: 'heading',
+        id: 'sectionHeading',
+        style: 'color: blue; font-size: 32px',
+      },
       parent: document.getElementById('section'),
       text: 'Hello world',
     });
