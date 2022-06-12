@@ -32,22 +32,22 @@ Configuration properties:
 Attribute:
 -------------------
 
+  One attribute with value:
   ```javascript
-  // one attribute with value
   attribute: [
     'class', 'element'
   ]
   ```
 
+  one attribute without value:
   ```javascript
-  // one attribute without value
   attribute: [
     'required'
   ]
   ```
 
+  many attributes with or without a value:
   ```javascript
-  // many attributes with or without a value
   attribute: [
     [ 'class', 'element' ],
     [ 'id', 21 ],
